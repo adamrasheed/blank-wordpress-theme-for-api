@@ -28,10 +28,10 @@
                 <a href="<?= $url . 'types';  ?>" class="link">Post Types</a> – get all the post types
             </li>
 			<li>
-                <a href="<?= $urlACF . 'posts';  ?>" class="link">Advanced Custom Fields: Posts</a> – get custom field types for pages
+                <a href="<?= $urlACF . 'posts';  ?>" class="link">ACF: Posts</a> – get advanced custom fields for pages
             </li>
 			<li>
-                <a href="<?= $urlACF . 'pages';  ?>" class="link">Advanced Custom Fields: Pages</a> – get custom field types for pages
+                <a href="<?= $urlACF . 'pages';  ?>" class="link">ACF: Pages</a> – get advanced custom fields for pages
             </li>
         </ul>
         <div class="credit">
