@@ -45,9 +45,6 @@ if ( ! function_exists( 'react_setup' ) ) :
 		 * to output valid HTML5.
 		 */
 		add_theme_support( 'html5', array(
-			// 'search-form',
-			// 'comment-form',
-			// 'comment-list',
 			'gallery',
 			'caption',
 		) );
@@ -106,13 +103,6 @@ function react_widgets_init() {
 }
 add_action( 'widgets_init', 'react_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-// function react_scripts() {
-// 	wp_enqueue_style( 'style', get_stylesheet_uri() );
-// }
-
 wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 /**
@@ -128,6 +118,7 @@ if( function_exists('acf_add_options_page') ) {
 		'page_title' 	=> 'Site Options',
 		'menu_title'	=> 'Site Options',
 		'menu_slug' 	=> 'site-options',
+		'show_in_graphql' => true,
 	));
 	
 }
